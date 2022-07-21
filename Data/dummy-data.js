@@ -3,7 +3,7 @@ import Meal from "../models/meal";
 
 export const CATEGORIES = [
   new Category("c1", "Italian", "#ffffff"),
-  new Category("c2", "Quick & Easy", "#ffffff"),
+  new Category("c2", "Quick & Easy", "#ccc"),
   new Category("c3", "Hamburgers", "#ffffff"),
   new Category("c4", "German", "#000"),
   new Category("c5", "Light & Lovely", "#ffffff"),
