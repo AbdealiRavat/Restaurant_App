@@ -5,13 +5,13 @@ export const CATEGORIES = [
   new Category("c1", "Italian", "#ffffff"),
   new Category("c2", "Quick & Easy", "#ffffff"),
   new Category("c3", "Hamburgers", "#ffffff"),
-  new Category("c4", "German", "#ffffff"),
+  new Category("c4", "German", "#000"),
   new Category("c5", "Light & Lovely", "#ffffff"),
   new Category("c6", "Exotic", "#ffffff"),
   new Category("c7", "Breakfast", "#ffffff"),
-  new Category("c8", "Asian", "#ffffff"),
+  new Category("c8", "Asian", "#000"),
   new Category("c9", "French", "#ffffff"),
-  new Category("c10", "Summer", "#ffffff"),
+  new Category("c10", "Summer", "#000"),
 ];
 
 export const MEALS = [
