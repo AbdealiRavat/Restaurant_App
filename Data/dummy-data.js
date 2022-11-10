@@ -3,15 +3,15 @@ import Meal from "../models/meal";
 
 export const CATEGORIES = [
   new Category("c1", "Italian", "#ffffff"),
-  new Category("c2", "Quick & Easy", "#ccc"),
+  new Category("c2", "Quick & Easy", "#fff"),
   new Category("c3", "Hamburgers", "#ffffff"),
-  new Category("c4", "German", "#000"),
+  new Category("c4", "German", "#fff"),
   new Category("c5", "Light & Lovely", "#ffffff"),
-  new Category("c6", "Exotic", "#fafafa"),
+  new Category("c6", "Exotic", "#ffffff"),
   new Category("c7", "Breakfast", "#ffffff"),
-  new Category("c8", "Asian", "#000"),
+  new Category("c8", "Asian", "#fff"),
   new Category("c9", "French", "#ffffff"),
-  new Category("c10", "Summer", "#000"),
+  new Category("c10", "Summer", "#fff"),
 ];
 
 export const MEALS = [

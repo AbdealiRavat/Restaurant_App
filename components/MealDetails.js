@@ -1,10 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-function MealDetails({ 
-    duration,
-    complexity,
-    affordability,}) {
+function MealDetails({ duration, complexity, affordability }) {
   return (
     <View style={styles.Details}>
       <Text style={styles.ItemDetails}>{duration} min</Text>
@@ -21,7 +18,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-around",
   },
   ItemDetails: {
-    color: "#547861",    
+    color: "#547861",
     fontSize: 14,
   },
 });

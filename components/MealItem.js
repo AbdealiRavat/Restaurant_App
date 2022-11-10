@@ -10,7 +10,6 @@ import {
 
 import Shadow from "../components/Shadow.js";
 
-
 function MealItem({
   id,
   title,
@@ -45,7 +44,8 @@ function MealItem({
           <View style={styles.Details}>
             <Text style={styles.ItemDetails}>{duration} min</Text>
             <Text style={styles.ItemDetails}>{complexity.toUpperCase()}</Text>
-            <Text style={styles.ItemDetails}>{affordability.toUpperCase()}
+            <Text style={styles.ItemDetails}>
+              {affordability.toUpperCase()}
             </Text>
           </View>
         </View>
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     margin: 10,
     borderRadius: 15,
     overflow: (Platform.OS = "android" ? "hidden" : "visible"),
-    backgroundColor: "#ffffff",
+    backgroundColor: "#fff",
   },
   innerContainer: {
     borderRadius: 8,

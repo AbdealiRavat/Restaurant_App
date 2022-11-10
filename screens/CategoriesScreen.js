@@ -16,7 +16,7 @@ function CategoriesScreen({ navigation }) {
     return (
       <CategoryGridTile
         title={itemData.item.title}
-        color={itemData.item.color}
+        // color={itemData.item.color}
         onPress={pressHandler}
         navigation={navigation}
       />
@@ -26,6 +26,7 @@ function CategoriesScreen({ navigation }) {
   function HeaderHandler() {}
   useLayoutEffect(() => {
     navigation.setOptions({
+      title: "Marriott",
       headerRight: () => {
         return <NotificationIcon onPress={HeaderHandler} />;
       },
@@ -36,7 +37,7 @@ function CategoriesScreen({ navigation }) {
     <View style={styles.container}>
       <FlatList
         data={CATEGORIES}
-        keyExtractor={(item) => item.id}
+        // keyExtractor={(item) => item.id}
         renderItem={renderCategoryItem}
         numColumns={2}
       />
@@ -46,10 +47,10 @@ function CategoriesScreen({ navigation }) {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    // flex: 1,
     paddingHorizontal: 5,
+    marginBottom: 50,
   },
-  
 });
 
 export default CategoriesScreen;

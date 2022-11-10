@@ -1,5 +1,12 @@
-import { StyleSheet, Text, View, FlatList, ScrollView, TouchableOpacity } from "react-native";
-import  { useLayoutEffect } from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  FlatList,
+  ScrollView,
+  TouchableOpacity,
+} from "react-native";
+import { useLayoutEffect } from "react";
 import { MEALS, CATEGORIES } from "../Data/dummy-data";
 import MealItem from "../components/MealItem";
 import IconButton from "../components/IconButton";
@@ -10,8 +17,8 @@ function MealOverviewScreen({ route, navigation }) {
   const displayedMeals = MEALS.filter((mealItem) => {
     return mealItem.categoryIds.indexOf(catId) >= 0;
   });
-  
-  function HeaderHandler() {  }
+
+  function HeaderHandler() {}
   useLayoutEffect(() => {
     const categoryTitle = CATEGORIES.find(
       (category) => category.id === catId
@@ -19,11 +26,17 @@ function MealOverviewScreen({ route, navigation }) {
 
     navigation.setOptions({
       title: categoryTitle,
+      // headerStyle: {
+      //   backgroundColor: "transparent",
+      // },
+      // headerTintColor: "#000",
+      // headerTitleAlign: "left",
+
       headerRight: () => {
-        return <IconButton onPress={HeaderHandler}/>
-      }
+        return <IconButton onPress={HeaderHandler} />;
+      },
     });
-  }, [navigation.catId, HeaderHandler ]);
+  }, [navigation.catId, HeaderHandler]);
 
   function renderMealItem(itemData) {
     const item = itemData.item;

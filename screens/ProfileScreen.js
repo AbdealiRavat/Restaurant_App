@@ -1,70 +1,70 @@
-import { StyleSheet, View, TouchableOpacity, Text} from "react-native";
+import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 
+import tw from "twrnc";
+
 function ProfileScreen() {
   return (
-    <View
-      scrollable={true}
-      hasSafeArea={false}
-    >
-      <View style={styles.containerEA}>
-        <TouchableOpacity style={styles.textJG}>
-          <Text>Jessica Green</Text>
+    <View scrollable={true} hasSafeArea={false} style={tw`bg-white`}>
+      <View style={tw`mt-10`}>
+        <TouchableOpacity style={tw`text-black`}>
+          <Text style={tw`text-black text-center font-bold text-lg py-2`}>
+            Jessica black
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonP2}>
-        <Text>Edit Profile</Text>
+          <Text style={tw`text-black text-center text-lg`}>Edit Profile</Text>
         </TouchableOpacity>
       </View>
 
-
-      <View style={styles.screenContainerJb}>
+      <View style={tw`my-2px`}>
         <TouchableOpacity style={styles.touchableOk}>
-          <View style={styles.viewKs}>
-            <Text style={styles.textPr}>Privacy Settings      
-            </Text>   
+          <View style={tw`flex flex-row justify-between items-center px-5`}>
+            <Text style={tw`text-black text-left text-lg`}>
+              Privacy Settings
+            </Text>
             <Ionicons
               style={styles.IoniconsFE}
               size={24}
               color="#8732fc"
               name="person-circle"
-                />
+            />
           </View>
         </TouchableOpacity>
         <TouchableOpacity style={styles.touchableOm}>
-          <View style={styles.viewYR}>
-            <Text style={styles.textPr}>Notifications
+          <View style={tw`flex flex-row justify-between items-center px-5`}>
+            <Text style={tw`text-black text-left text-lg`}>Notifications</Text>
             <Ionicons
               style={styles.iconCl}
               color="#8732fc"
               name="notifications"
               size={24}
-                />
-              </Text>
+            />
           </View>
         </TouchableOpacity>
         <TouchableOpacity style={styles.touchableBp}>
-          <View style={styles.viewS1}>
-          <Text style={styles.textPr}>Order History
+          <View style={tw`flex flex-row justify-between items-center px-5`}>
+            <Text style={tw`text-black text-left text-lg`}>Order History</Text>
             <Ionicons
               style={styles.iconZz}
               color="#8732fc"
               size={24}
               name="timer-outline"
-                />
-                </Text>
+            />
           </View>
         </TouchableOpacity>
         <TouchableOpacity style={styles.touchableJg}>
-          <View style={styles.viewAl}>
-            <Text style={styles.textPr}>Payment Details
+          <View style={tw`flex flex-row justify-between items-center px-5`}>
+            <Text style={tw`text-black text-left text-lg`}>
+              Payment Details
+            </Text>
             <Ionicons
               style={styles.iconZb}
               size={24}
               name="card"
               color="#8732fc"
-                />
-                </Text>
+            />
           </View>
         </TouchableOpacity>
       </View>
@@ -79,19 +79,22 @@ const styles = StyleSheet.create({
   viewKs: {
     justifyContent: "space-evenly",
     flexDirection: "row",
-    marginHorizontal: 30
+    marginHorizontal: 30,
   },
   viewYR: {
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
     flexDirection: "row",
+    marginHorizontal: 30,
   },
   viewS1: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
+    marginHorizontal: 30,
   },
   viewAl: {
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
     flexDirection: "row",
+    marginHorizontal: 30,
   },
   imageBackgroundNb: {
     width: "100%",
@@ -161,11 +164,3 @@ const styles = StyleSheet.create({
 });
 
 export default ProfileScreen;
-
-
-
-
-
-
-
-
