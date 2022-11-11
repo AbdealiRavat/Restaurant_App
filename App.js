@@ -54,7 +54,7 @@ function TabNavigator() {
           } else if (route.name === "Chats") {
             iconName = "chatbox-ellipses";
           } else if (route.name === "profile") {
-            iconName = "person";
+            iconName = "people";
           }
 
           // You can return any component that you like here!
