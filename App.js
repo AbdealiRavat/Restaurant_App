@@ -6,6 +6,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { Ionicons } from "@expo/vector-icons";
 
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import CategoriesScreen from "./screens/CategoriesScreen";
 import MealOverviewScreen from "./screens/MealOverviewScreen";
 import MealDetailScreen from "./screens/MealDetailScreen";
@@ -54,7 +55,7 @@ function TabNavigator() {
           } else if (route.name === "Chats") {
             iconName = "chatbox-ellipses";
           } else if (route.name === "profile") {
-            iconName = "people";
+            iconName = "person";
           }
 
           // You can return any component that you like here!
@@ -62,6 +63,10 @@ function TabNavigator() {
         },
       })}
     >
+      <BottomTab.Screen name="Categories" component={CategoriesScreen} />
+      <BottomTab.Screen name="Favorites" component={FavoritesScreen} />
+      <BottomTab.Screen name="Chats" component={ChatScreen} />
+      <BottomTab.Screen name="profile" component={ProfileScreen} />
       {/* <BottomTab.Screen
           name="Categories"
           component={CategoriesScreen}
@@ -106,10 +111,6 @@ function TabNavigator() {
             },
           }}
         /> */}
-      <BottomTab.Screen name="Categories" component={CategoriesScreen} />
-      <BottomTab.Screen name="Favorites" component={FavoritesScreen} />
-      <BottomTab.Screen name="Chats" component={ChatScreen} />
-      <BottomTab.Screen name="profile" component={ProfileScreen} />
     </BottomTab.Navigator>
   );
 }

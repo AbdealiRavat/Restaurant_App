@@ -51,8 +51,9 @@ function MealOverviewScreen({ route, navigation }) {
     };
     return <MealItem {...MealItemProps} />;
   }
+
   return (
-    <View style={styles.container}>
+    <View View style={styles.container}>
       <FlatList
         data={displayedMeals}
         keyExtractor={(item) => item.id}
@@ -60,13 +61,13 @@ function MealOverviewScreen({ route, navigation }) {
       />
     </View>
   );
-}
 
+  // <MealList listData={displayedMeals} navigation={props.navigation} />;
+}
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
   },
 });
-
 export default MealOverviewScreen;

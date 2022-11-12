@@ -12,7 +12,7 @@ import { MEALS } from "../Data/dummy-data";
 import MealDetails from "../components/MealDetails";
 import Shadow from "../components/Shadow.js";
 import IconButton from "../components/IconButton";
-import List from "../components/MealDetail/list";
+// import MealList from "../components/MealDetail/MealList";
 import { FavoriteContext } from "../Store/Context/Favorites-context";
 
 import tw from "twrnc";
