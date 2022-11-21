@@ -1,10 +1,27 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 
 function FavoritesScreen() {
   return (
-    <View style={styles.box}>
-      <Text>Favorites Screen</Text>
+    <View
+      style={{
+        height: "50%",
+        width: "95%",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Image
+        source={require("../assets/kk.jpg")}
+        resizeMode="contain"
+        style={{
+          height: "100%",
+          width: "100%",
+          marginRight: -15,
+          marginTop: 50,
+          borderRadius: 20,
+        }}
+      />
     </View>
   );
 }

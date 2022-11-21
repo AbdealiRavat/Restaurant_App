@@ -1,4 +1,11 @@
-import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
+import {
+  StyleSheet,
+  View,
+  TouchableOpacity,
+  Text,
+  Image,
+  ScrollView,
+} from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -6,68 +13,75 @@ import tw from "twrnc";
 
 function ProfileScreen() {
   return (
-    <View scrollable={true} hasSafeArea={false} style={tw`bg-white`}>
-      <View style={tw`mt-10`}>
-        <TouchableOpacity style={tw`text-black`}>
-          <Text style={tw`text-black text-center font-bold text-lg py-2`}>
-            Jessica black
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonP2}>
-          <Text style={tw`text-black text-center text-lg`}>Edit Profile</Text>
-        </TouchableOpacity>
-      </View>
-
-      <View style={tw`my-2px`}>
-        <TouchableOpacity style={styles.touchableOk}>
-          <View style={tw`flex flex-row justify-between items-center px-5`}>
-            <Text style={tw`text-black text-left text-lg`}>
-              Privacy Settings
-            </Text>
-            <Ionicons
-              style={styles.IoniconsFE}
-              size={24}
-              color="#8732fc"
-              name="person-circle"
-            />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.touchableOm}>
-          <View style={tw`flex flex-row justify-between items-center px-5`}>
-            <Text style={tw`text-black text-left text-lg`}>Notifications</Text>
-            <Ionicons
-              style={styles.iconCl}
-              color="#8732fc"
-              name="notifications"
-              size={24}
-            />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.touchableBp}>
-          <View style={tw`flex flex-row justify-between items-center px-5`}>
-            <Text style={tw`text-black text-left text-lg`}>Order History</Text>
-            <Ionicons
-              style={styles.iconZz}
-              color="#8732fc"
-              size={24}
-              name="timer-outline"
-            />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.touchableJg}>
-          <View style={tw`flex flex-row justify-between items-center px-5`}>
-            <Text style={tw`text-black text-left text-lg`}>
-              Payment Details
-            </Text>
-            <Ionicons
-              style={styles.iconZb}
-              size={24}
-              name="card"
-              color="#8732fc"
-            />
-          </View>
-        </TouchableOpacity>
-      </View>
+    <View>
+      {/* // <View scrollable={true} hasSafeArea={false} style={tw`bg-white`}>
+      //   <View style={tw`mt-10`}>
+      //     <TouchableOpacity style={tw`text-black`}>
+      //       <Text style={tw`text-black text-center font-bold text-lg py-2`}>
+      //         Jessica black
+      //       </Text>
+      //     </TouchableOpacity>
+      //     <TouchableOpacity style={styles.buttonP2}>
+      //       <Text style={tw`text-black text-center text-lg`}>Edit Profile</Text>
+      //     </TouchableOpacity>
+      //   </View>
+  
+      //   <View style={tw`my-2px`}>
+      //     <TouchableOpacity style={styles.touchableOk}>
+      //       <View style={tw`flex flex-row justify-between items-center px-5`}>
+      //         <Text style={tw`text-black text-left text-lg`}>
+      //           Privacy Settings
+      //         </Text>
+      //         <Ionicons
+      //           style={styles.IoniconsFE}
+      //           size={24}
+      //           color="#8732fc"
+      //           name="person-circle"
+      //         />
+      //       </View>
+      //     </TouchableOpacity>
+      //     <TouchableOpacity style={styles.touchableOm}>
+      //       <View style={tw`flex flex-row justify-between items-center px-5`}>
+      //         <Text style={tw`text-black text-left text-lg`}>Notifications</Text>
+      //         <Ionicons
+      //           style={styles.iconCl}
+      //           color="#8732fc"
+      //           name="notifications"
+      //           size={24}
+      //         />
+      //       </View>
+      //     </TouchableOpacity>
+      //     <TouchableOpacity style={styles.touchableBp}>
+      //       <View style={tw`flex flex-row justify-between items-center px-5`}>
+      //         <Text style={tw`text-black text-left text-lg`}>Order History</Text>
+      //         <Ionicons
+      //           style={styles.iconZz}
+      //           color="#8732fc"
+      //           size={24}
+      //           name="timer-outline"
+      //         />
+      //       </View>
+      //     </TouchableOpacity>
+      //     <TouchableOpacity style={styles.touchableJg}>
+      //       <View style={tw`flex flex-row justify-between items-center px-5`}>
+      //         <Text style={tw`text-black text-left text-lg`}>
+      //           Payment Details
+      //         </Text>
+      //         <Ionicons
+      //           style={styles.iconZb}
+      //           size={24}
+      //           name="card"
+      //           color="#8732fc"
+      //         />
+      //       </View>
+      //     </TouchableOpacity>
+      //   </View>
+      // </View> */}
+      <Image
+        source={require("../assets/11.png")}
+        resizeMode="contain"
+        style={{ position: "absolute", top: -120, left: -5 }}
+      />
     </View>
   );
 }
